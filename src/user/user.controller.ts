@@ -19,8 +19,8 @@ import {
     }
   
     @Get(':id')
-    getSpecificUser(@Param()index: any) {
-      return this.userService.getSpecificUser(index.id);
+    getSpecificUser(@Param('id')id) {
+      return this.userService.getSpecificUser(id);
     }
   
     @Post()
